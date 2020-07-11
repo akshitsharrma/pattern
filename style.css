@@ -1,0 +1,27 @@
+.div1{background-color:#F4E8FF;
+    border:1px solid black;
+    padding: 10px;
+text-align: center;}
+.myheader{box-sizing: border-box;
+  border:1px solid #808080;
+    background-color: black;
+  display:inline-block;
+  color:white;  
+  width:24%;
+text-align: center; }
+.divcell
+{box-sizing: border-box;
+  border:1px solid #808080;
+    background-color: #C78EFF;
+  display:inline-block;
+  color:black;  
+  width:24%;
+text-align: center;}
+.divcellc
+{box-sizing: border-box;
+  border:1px solid #808080;
+    background-color: #FFA5A5;
+  display:inline-block;
+  color:black;  
+  width:24%;
+text-align: center;}

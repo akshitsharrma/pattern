@@ -1,0 +1,41 @@
+<html>
+<head> <link rel="stylesheet" href="style.css"></head>
+<body><div class='div1' id="table"></div></body>
+<script>var str="";
+var n=window.prompt("enter number");
+n=+n;
+  var number1 = "<div class='myheader'>Number</div>";
+  var patt1 = "<div class='myheader'>A's</div>";
+  var patt2 = "<div class='myheader'>B's</div>";
+  var patt3 = "<div class='myheader'>AB's</div>";
+   var row1 = "<div>"+number1+patt1+patt2+patt3+"</div>";
+    str = str+row1;
+	var p1 = "";
+	var p2 ="";
+    var p3="";
+    for(var i=1;i<=n;i++){ 
+	    p1=p1+"A";
+        p2=p2+"B";		
+        if(i%2!=0)
+        {
+            p3=p3+'A';
+            var num1 = "<div class='divcell'>"+i+"</div>";
+	     var ptrn1 = "<div class='divcell'>"+p1+"</div>";
+	     var ptrn2 = "<div class='divcell'>"+p2+"</div>";
+         var ptrn3 = "<div class='divcell'>"+p3+"</div>";
+	    var row2 = "<div>"+num1+ptrn1+ptrn2+ptrn3+"</div>";
+	    str = str+row2;
+        }
+        else
+        {
+            p3=p3+'B';
+            var num1 = "<div class='divcellc'>"+i+"</div>";
+	    var ptrn1 = "<div class='divcellc'>"+p1+"</div>";
+	    var ptrn2 = "<div class='divcellc'>"+p2+"</div>";
+     var ptrn3 = "<div class='divcellc'>"+p3+"</div>";
+	 var row2 = "<div>"+num1+ptrn1+ptrn2+ptrn3+"</div>";
+	  str = str+row2;
+        }}
+	var ele = document.getElementById("table");
+	 ele.innerHTML = str;
+  </script></html>
